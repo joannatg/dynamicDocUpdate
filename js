@@ -131,7 +131,7 @@ function importDataForMonth(sourceDoc, sourceTabName, firstRowSource, targetShee
   
   var range = targetSheet.getDataRange();  
   var lastRowTarget = targetSheet.getLastRow();       
-  var borderRange = targetSheet.getRange(startTargetRow, 2, lastRowTarget-startTargetRow+1, 8);
+  var borderRange = targetSheet.getRange(startTargetRow+1, 2, lastRowTarget-startTargetRow, 8);
   
   borderRange.setBorder(true, true, true, true, true, true);
   borderRange.setWrap(true);    
